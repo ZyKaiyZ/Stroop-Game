@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 930px;
+    height: auto;
+    margin: 30px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 30px;
+    border: 10px;
+    border-color: rgb(160, 160, 223);
+    border-style: solid;
+    border-width: 10px;
+}
+
+.box{
+    background-color: rgb(167, 95, 95);
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 20px;
+    margin: 9px;
+    flex: 1
+}
+
+.text{
+    font-size: 70px;
+    font-weight: 600;
+    color: black;
+}
+
+.score{
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.swal-modal{
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: rgb(160, 160, 223);
+    border-style: solid;
+}
+.swal-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swal-content__input{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(160, 160, 223);
+}
+
+.swal-button{
+    color: white;
+    background-color: black;
+    border-color: rgb(160, 160, 223);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    font-size: 20px;
+}

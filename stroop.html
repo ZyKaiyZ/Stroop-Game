@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stroop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Stroop Game</title>
+</helad>
+<body id="app">
+    <div class="container">
+        <i class="fa-solid fa-face-smile score">&nbsp;[[ correct ]]</i>
+        <i class="fa-solid fa-face-frown score">&nbsp;[[ fail ]]</i>
+        <i class="fa-solid fa-check score">&nbsp;[[ done ]]</i>
+        <i class="fa-solid fa-clock score">&nbsp;[[ timer ]]</i>
+        <div class="container">
+            <div class="text" :style="{color: fontColor}">[[ colorText ]]</div>
+        </div>
+        <div class="container">
+            <div class="box" @click="red" style="background-color: red;"></div>
+            <div class="box" @click="blue" style="background-color: blue;"></div>
+            <div class="box" @click="green" style="background-color: green;"></div>
+            <div class="box" @click="black" style="background-color: black;"></div>
+            <div class="box" @click="yellow" style="background-color: rgb(203, 203, 0);"></div>
+        </div>
+    </div>
+</body>
+<script src="./stroop.js"></script>
+</html>
