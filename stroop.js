@@ -2,7 +2,7 @@ const vm = Vue.createApp({
     delimiters: ['[[', ']]'],
     data() {
         return {
-            fontColor: '',
+            fontColor: 'black',
             colorText:"藍色",
             correct: 0,
             fail: 0,
@@ -42,15 +42,18 @@ const vm = Vue.createApp({
                 closeOnClickOutside: false,
             }).then((value) => {
                 this.countdown(value);
+                this.correct = 0, this.fail = 0, this.done = 0;
             });
         },
         checkAnswer(colorParam){
-            var colorArray = ["紅色","藍色","綠色","黑色","黃色"];
+            var textArray = ["紅色","藍色","綠色","黑色","黃色"];
+            var colorArray = ["red","blue","green","black","rgb(203, 203, 0)"];
             var r = Math.floor(Math.random() * 5);
-            this.colorText == colorParam ? this.correct++ : this.fail++;
-            this.colorText = colorArray[r];
+            this.colorText = textArray[r];
+            console.log(this.fontColor);
+            textArray[colorArray.indexOf(this.fontColor)] == colorParam ? this.correct++ : this.fail++;
             this.done = this.correct + this.fail;
-            this.getRandomColor();
+            this.getRandomColor()
         },
         getRandomColor(){
             var colorArray = ["red","blue","green","black","rgb(203, 203, 0)"];
