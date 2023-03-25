@@ -14,3 +14,12 @@
     - 勾則為已作答數。
 
     <img src="./img/gameRestart.png" style="width:300px">
+
+### 開始遊戲:
+Web version : 
+[Here](https://zykaiyz.github.io/Stroop-Game/stroop.html)
+
+Python version :
+```
+> python stroop.py
+```
