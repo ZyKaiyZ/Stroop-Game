@@ -4,7 +4,7 @@
 1. 一開始會先需要輸入遊玩的時間也就是倒計時的時間。
 
     <img src="./img/gameStart.png" style="width:300px">
-2. 之後便開始遊玩，此遊戲需要遊玩者點擊文字描述的顏色而非文字顯示的顏色。
+2. 之後便開始遊玩，此遊戲需要遊玩者點擊文字顯示的顏色而非文字描述的顏色。
 
     <img src="./img/gamePlaying.png" style="width:300px">
 
